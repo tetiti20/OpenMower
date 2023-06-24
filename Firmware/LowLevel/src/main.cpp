@@ -141,7 +141,7 @@ void updateEmergency() {
 
     uint8_t emergency_state = 0;
 
-    bool is_lifted = emergency1 || emergency2;
+    bool is_lifted = emergency1 && emergency2;
     bool stop_pressed = emergency3 || emergency4;
 
     if (is_lifted) {
